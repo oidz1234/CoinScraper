@@ -15,6 +15,6 @@ coins = ['BTC', 'DOGE', 'ETH', 'BAT', 'XMR']
 for coin in coins:
     url = f'https://finance.yahoo.com/quote/{coin}-USD'
     coin_value = get_coin_value(url)
-    print(f'{coin} : {coin_value}')
+    print(f'{coin} : {coin_value[0]}')
 
 
